@@ -1,0 +1,27 @@
+{
+  "name": "tomaj/csv-processor",
+  "description": "CSV Processor",
+  "type": "library",
+  "license": "LGPL",
+  "authors": [
+    {
+      "name": "Tomas Majer",
+      "homepage": "http://tomaj.sk"
+    }
+  ],
+  "require": {
+    "php": ">= 5.3.7",
+    ""
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "~2.0",
+    "phpunit/phpunit": ">4.2",
+    "satooshi/php-coveralls": "dev-master"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  }
+}
