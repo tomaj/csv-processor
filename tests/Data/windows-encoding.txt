@@ -1,0 +1,1 @@
+WEBid;TPN;Název;Popis;IKONA;Doplòkové info;Benefit;Cena jednotková;Cena jednotková EU;Cena stará;Cena stará EU;Cena akèní;Cena akèní EU;Leták è.;Typ;Platí od;Platí do;Neplatí v;Platí v;Newsletter

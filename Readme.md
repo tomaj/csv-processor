@@ -11,7 +11,14 @@ Kazdy import je zlozeny z 3 casti.
 
 Prakticky to moze vyzerat takto:
 
-```
+```php
+use Tomaj\CsvProcessor\CsvExtractor;
+use Tomaj\CsvProcessor\DataProcessor;
+use Tomaj\CsvProcessor\Converters\EncodingConverter;
+use Tomaj\CsvProcessor\Processors\PassField;
+use Tomaj\CsvProcessor\Processors\RemoveField;
+use Tomaj\CsvProcessor\Line;
+
 $csvExtractor = new CsvExtractor('cesta_k_suboru_.csv', ';');
 $csvExtractor->addConverter(new EncodingConverter('WINDOWS-1250', 'UTF-8')); // mozme nastavit konverziu ak treba
 $data = $csvExtractor->loadData();

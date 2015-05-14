@@ -1,9 +1,8 @@
 <?php
 
-namespace Tomaj\CsvProcessor\Coverters;
+namespace Tomaj\CsvProcessor\Converters;
 
 interface ConverterInterface
 {
 	public function convert($input);
 }
-

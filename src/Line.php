@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Import\Csv;
+namespace Tomaj\CsvProcessor;
 
 class Line
 {

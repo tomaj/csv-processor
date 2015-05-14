@@ -1,6 +1,6 @@
 <?php
 
-namespace Tomaj\CsvProcessor\Coverters;
+namespace Tomaj\CsvProcessor\Converters;
 
 class EncodingConverter implements ConverterInterface
 {
@@ -22,4 +22,3 @@ class EncodingConverter implements ConverterInterface
 		return iconv($this->inputEncoding, $this->outputEncoding, $input);
 	}
 }
-

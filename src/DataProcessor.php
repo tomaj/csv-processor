@@ -3,7 +3,6 @@
 namespace Tomaj\CsvProcessor;
 
 use Symfony\Component\Console\Output\OutputInterface;
-
 use Tomaj\CsvProcessor\Processors\Processor;
 
 class DataProcessor
