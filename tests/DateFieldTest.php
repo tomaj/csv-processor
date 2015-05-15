@@ -18,7 +18,7 @@ class DateFieldTest extends PHPUnit_Framework_TestCase
 		$passFieldProcessor = new DateField('field2', 'field4');
 		$passFieldProcessor->process($line);
 
-		$this->assertEquals(1362873600, $line->get('field3'));
-		$this->assertEquals(1362873600, $line->get('field4'));
+		$this->assertEquals(1362870000, $line->get('field3'));
+		$this->assertEquals(1362870000, $line->get('field4'));
 	}
 }
