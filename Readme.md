@@ -35,7 +35,7 @@ $csvExtractor->addConverter(new EncodingConverter('WINDOWS-1250', 'UTF-8')); // 
 $data = $csvExtractor->loadData();
 
 $processor = new DataProcessor($output);
-$processor->addProcessor(new PassField('pi_tpn', 'tpn')); // field 'pi_tpn' z csvcka sa do vystupu dostane ako field 'tpn'
+$processor->addProcessor(new PassField('field_name', 'name')); // field 'file_name' z csvcka sa do vystupu dostane ako field 'name'
 $processor->addProcessor(new RemoveField('field_ktory_sa_zmaze'));
 $processor->processData($data, function(Line $line, $pid)) {
 	// tu je mozne naimlementovat logiku co sa ma stat s $line kde su spracovane data
