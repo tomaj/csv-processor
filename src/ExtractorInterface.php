@@ -4,5 +4,5 @@ namespace Tomaj\CsvProcessor;
 
 interface ExtractorInterface
 {
-	public function loadData();
+    public function loadData();
 }

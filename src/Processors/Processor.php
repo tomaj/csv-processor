@@ -6,15 +6,15 @@ use Tomaj\CsvProcessor\Line;
 
 abstract class Processor
 {
-	public $inputField;
+    public $inputField;
 
-	public $outputField;
+    public $outputField;
 
-	public function __construct($inputField, $outputField = null)
-	{
-		$this->inputField = $inputField;
-		$this->outputField = $outputField;
-	}
+    public function __construct($inputField, $outputField = null)
+    {
+        $this->inputField = $inputField;
+        $this->outputField = $outputField;
+    }
 
-	abstract public function process(Line $input);
+    abstract public function process(Line $input);
 }
