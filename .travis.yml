@@ -17,6 +17,7 @@ before_script:
 
 script:
     - mkdir -p build/logs
+   - make sniff src tests
 
 after_script:
     - php vendor/bin/coveralls -v
