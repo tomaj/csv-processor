@@ -1,9 +1,19 @@
+Csv processor
+=============
+
+Kniznica pre procesovanie csvciek
+
 **Prudko v development mode** - neoporucam pouzivat, zatial to je len vyextrahovane z projektu a nie su dobre zadefinovane zavyslosti
 
+[![Build Status](https://secure.travis-ci.org/tomaj/csv-processor.png)](http://travis-ci.org/tomaj/csv-processor)
+[![Coverage Status](https://coveralls.io/repos/tomaj/csv-processor/badge.png?branch=master)](https://coveralls.io/r/tomaj/csv-processor?branch=master)
 [![Code Climate](https://codeclimate.com/github/tomaj/csv-processor/badges/gpa.svg)](https://codeclimate.com/github/tomaj/csv-processor)
+[![Dependency Status](https://www.versioneye.com/user/projects/5555b08f774ff250e2000115/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5555b08f774ff250e2000115)
+
+[![Latest Stable Version](https://poser.pugx.org/tomaj/csv-processor/v/stable)](https://packagist.org/packages/tomaj/csv-processor) [![Total Downloads](https://poser.pugx.org/tomaj/csv-processor/downloads)](https://packagist.org/packages/tomaj/csv-processor) [![Latest Unstable Version](https://poser.pugx.org/tomaj/csv-processor/v/unstable)](https://packagist.org/packages/tomaj/csv-processor) [![License](https://poser.pugx.org/tomaj/csv-processor/license)](https://packagist.org/packages/tomaj/csv-processor)
 
 Pouzitie
-========
+--------
 
 Kazdy import je zlozeny z 3 casti.
 
@@ -26,7 +36,7 @@ $csvExtractor->addConverter(new EncodingConverter('WINDOWS-1250', 'UTF-8')); // 
 $data = $csvExtractor->loadData();
 
 $processor = new DataProcessor($output);
-$processor->addProcessor(new PassField('pi_tpn', 'tpn')); // field 'pi_tpn' z csvcka sa do vystupu dostane ako field 'tpn'
+$processor->addProcessor(new PassField('field_name', 'name')); // field 'file_name' z csvcka sa do vystupu dostane ako field 'name'
 $processor->addProcessor(new RemoveField('field_ktory_sa_zmaze'));
 $processor->processData($data, function(Line $line, $pid)) {
 	// tu je mozne naimlementovat logiku co sa ma stat s $line kde su spracovane data

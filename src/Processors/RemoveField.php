@@ -6,8 +6,8 @@ use Tomaj\CsvProcessor\Line;
 
 class RemoveField extends Processor
 {
-	public function process(Line $input)
-	{
-		$input->remove($this->inputField);
-	}
+    public function process(Line $input)
+    {
+        $input->remove($this->inputField);
+    }
 }

@@ -4,5 +4,5 @@ namespace Tomaj\CsvProcessor\Converters;
 
 interface ConverterInterface
 {
-	public function convert($input);
+    public function convert($input);
 }
