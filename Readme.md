@@ -1,5 +1,7 @@
 **Prudko v development mode** - neoporucam pouzivat, zatial to je len vyextrahovane z projektu a nie su dobre zadefinovane zavyslosti
 
+[![Code Climate](https://codeclimate.com/github/tomaj/csv-processor/badges/gpa.svg)](https://codeclimate.com/github/tomaj/csv-processor)
+
 Pouzitie
 ========
 
