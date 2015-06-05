@@ -6,8 +6,8 @@ Kniznica pre procesovanie csvciek
 **Prudko v development mode** - neoporucam pouzivat, zatial to je len vyextrahovane z projektu a nie su dobre zadefinovane zavyslosti
 
 [![Build Status](https://secure.travis-ci.org/tomaj/csv-processor.png)](http://travis-ci.org/tomaj/csv-processor)
-[![Coverage Status](https://coveralls.io/repos/tomaj/csv-processor/badge.png?branch=master)](https://coveralls.io/r/tomaj/csv-processor?branch=master)
 [![Code Climate](https://codeclimate.com/github/tomaj/csv-processor/badges/gpa.svg)](https://codeclimate.com/github/tomaj/csv-processor)
+[![Test Coverage](https://codeclimate.com/github/tomaj/csv-processor/badges/coverage.svg)](https://codeclimate.com/github/tomaj/csv-processor/coverage)
 [![Dependency Status](https://www.versioneye.com/user/projects/5555b08f774ff250e2000115/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5555b08f774ff250e2000115)
 
 [![Latest Stable Version](https://poser.pugx.org/tomaj/csv-processor/v/stable)](https://packagist.org/packages/tomaj/csv-processor) [![Total Downloads](https://poser.pugx.org/tomaj/csv-processor/downloads)](https://packagist.org/packages/tomaj/csv-processor) [![Latest Unstable Version](https://poser.pugx.org/tomaj/csv-processor/v/unstable)](https://packagist.org/packages/tomaj/csv-processor) [![License](https://poser.pugx.org/tomaj/csv-processor/license)](https://packagist.org/packages/tomaj/csv-processor)
