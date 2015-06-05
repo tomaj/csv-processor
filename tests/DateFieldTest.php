@@ -10,7 +10,10 @@ class DateFieldTest extends PHPUnit_Framework_TestCase
 {
     public function testPass()
     {
-        $line = new Line(array('field1' => '10.3.2013', 'field2' => '3/10/2013'));
+        $date1 = strtotime('10.3.2013');
+        $date2 = strtotime('11.4.2015');
+
+        $line = new Line(array('field1' => date('d.m.Y', $date1), 'field2' => date('m/d/Y', $date2)));
 
         $passFieldProcessor = new DateField('field1', 'field3');
         $passFieldProcessor->process($line);
@@ -18,7 +21,7 @@ class DateFieldTest extends PHPUnit_Framework_TestCase
         $passFieldProcessor = new DateField('field2', 'field4');
         $passFieldProcessor->process($line);
 
-        $this->assertEquals(1362870000, $line->get('field3'));
-        $this->assertEquals(1362870000, $line->get('field4'));
+        $this->assertEquals($date1, $line->get('field3'));
+        $this->assertEquals($date2, $line->get('field4'));
     }
 }
