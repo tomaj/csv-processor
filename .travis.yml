@@ -5,11 +5,13 @@ php:
     - 5.4
     - 5.5
     - 5.6
+    - 7.0
     - hhvm
 
 matrix:
     allow_failures:
         - php: hhvm
+        - php: 7.0
 
 before_script:
     - composer self-update
@@ -20,4 +22,4 @@ script:
     - make sniff src tests
 
 after_script:
-    - php vendor/bin/coveralls -v
+    - CODECLIMATE_REPO_TOKEN=ab2d7ccbfdb5f795aaa533761dc35df214dc5b34b74b0702d26b8c4f22c75059 ./vendor/bin/test-reporter
