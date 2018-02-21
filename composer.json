@@ -2,7 +2,7 @@
   "name": "tomaj/csv-processor",
   "description": "CSV Processor",
   "type": "library",
-  "license": "LGPL",
+  "license": "MIT",
   "authors": [
     {
       "name": "Tomas Majer",
